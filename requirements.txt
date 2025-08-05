@@ -1,0 +1,14 @@
+Django>=4.2
+djangorestframework
+psycopg2-binary
+celery[redis]
+pandas
+drf-yasg
+django-environ
+gunicorn
+pytest
+pytest-django
+celery>=5.2
+redis
+pandas
+openpyxl
