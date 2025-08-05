@@ -1,4 +1,4 @@
-````markdown
+
 # Credit Approval System
 
 A production-grade backend service for a credit approval system built with Django REST Framework, using background workers for data ingestion and a Dockerized environment.
@@ -152,6 +152,3 @@ docker-compose exec web python manage.py test core
   - **Deployment**: Docker, Docker Compose
 
 <!-- end list -->
-
-```
-```
