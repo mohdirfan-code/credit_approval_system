@@ -1,4 +1,3 @@
-
 # Credit Approval System
 
 A production-grade backend service for a credit approval system built with Django REST Framework, using background workers for data ingestion and a Dockerized environment.
@@ -11,6 +10,18 @@ A production-grade backend service for a credit approval system built with Djang
 - **Data Ingestion**: An asynchronous Celery task to ingest initial customer and loan data from Excel files into the database.
 - **Comprehensive API**: Endpoints for viewing single loan details and a list of all loans for a specific customer.
 - **Dockerized Environment**: The entire application stack (Django, PostgreSQL, Redis, Celery) runs in isolated Docker containers.
+
+---
+
+## Project Implementation Summary
+
+All core requirements of the assignment have been successfully implemented. The key completed tasks and bonus features are:
+
+-   **Business Logic**: All credit score and loan eligibility conditions from the PDF are implemented in the API, including the compound interest calculation, interest rate correction, and checks for EMIs relative to monthly salary.
+-   **Data Models**: Appropriate database models for `Customer` and `Loan` have been designed and implemented.
+-   **Asynchronous Tasks**: A Celery background worker has been set up to handle data ingestion from Excel files, as required.
+-   **Dockerization**: The entire application runs from a single `docker-compose up` command, making it easy to set up and run.
+-   **Bonus Task - Unit Tests**: A full suite of unit tests has been written to cover the core business logic of the API endpoints, demonstrating the project's reliability and code quality.
 
 ---
 
